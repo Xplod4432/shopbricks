@@ -219,3 +219,112 @@ form a:hover{
 i{
     margin: 1rem;
 }
+/* -------------------------- VIEW PAGE -------------------------- */
+img.map {
+    position: absolute;
+    
+}
+.map
+{
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hide {
+    display: none;
+    z-index: 1;
+}
+
+.myDIV:hover + .hide {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: orange;
+    display: inline-block;
+    height: 400px;
+    padding: 50px;
+}
+.map-head{
+  font-family: "Helvetica Bold Condensed", "Gill sans", "Bebas Neue" , sans-serif;
+  color: #FFFFFF;
+  font-size: 400%;
+}
+.desc-image{
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+.desc-text{
+  font-family: "Helvetica Bold Condensed", "Gill sans", "Bebas Neue" , sans-serif;
+  color: #FFFFFF;
+    font-size: 20px;
+}
+/* -------------------------- REPORT PAGE -------------------------- */
+div.gallery {
+    border: 1px solid #ccc;
+  }
+
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+
+  div.gallery img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .desc {
+    padding: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 150%;
+    font-weight: bold;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  .map-head{
+      font-family: "Helvetica Bold Condensed", "Gill sans", "Bebas Neue" , sans-serif;
+      color: #FFFFFF;
+      font-size: 400%;
+      text-align: center;
+      clear: both;
+      display: block;
+              }
+  hr.thick {
+    border: 15px solid white;
+    border-radius: 15px;
+    clear: both;
+    display: block;
+  }
+  ul{
+      color: #FFFFFF;
+      font-size: 200%;
+      text-align: center;
+  }
+  .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+  }

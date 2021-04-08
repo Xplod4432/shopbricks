@@ -1,1 +1,226 @@
 <!--Tushar Vilekar-->
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Author" content="Tushar Vilekar">
+        <meta name="description" content="This is the official website of Shop Bricks where you could buy, sell or rent your desired property for free">
+        <link rel="stylesheet" href="./CSS/style.css">
+        <title>Report Page</title>
+    </head>
+<body bgcolor=#000000>
+        <nav class="navbar1 navbar">
+            <div class="container">
+                <h1 class="logo text-white"> SB </h1>
+                <ul class="navitems">
+                    <li class="navitem"><a href="./homepage.html"> HOME </a></li>
+                    <li class="navitem"><a href="#about"> ABOUT US </a></li>
+                    <li class="navitem btn"><a href="./login.html" > LOGIN </a></li>
+                </ul>
+            </div>
+        </nav>
+ 
+	<h1 class="map-head"><span id="totalC"></span></h1>
+	<div class="responsive">
+	  <div class="gallery">
+	    <a target="_blank" href="./image/airport.jpg">
+	      <img src="./image/airport.jpg" alt="Airport" width="600" height="400">
+	    </a>
+	    <div class="desc"><span id="air"></span></div>
+	  </div>
+	</div>
+
+
+	<div class="responsive">
+	  <div class="gallery">
+	    <a target="_blank" href="./image/harbor.jpg">
+	      <img src="./image/harbor.jpg" alt="harbor" width="600" height="400">
+	    </a>
+	    <div class="desc"><span id="har"></span></div>
+	  </div>
+	</div>
+
+	<div class="responsive">
+	  <div class="gallery">
+	    <a target="_blank" href="./image/city.jpg">
+	      <img src="./image/city.jpg" alt="city" width="600" height="400">
+	    </a>
+	    <div class="desc"><span id="cit"></span></div>
+	  </div>
+	</div>
+
+	<div class="responsive">
+	  <div class="gallery">
+	    <a target="_blank" href="./image/beach.jpg">
+	      <img src="./image/beach.jpg" alt="beach" width="600" height="400">
+	    </a>
+	    <div class="desc"><span id="bea"></span></div>
+	  </div>
+	</div>
+	<div class="responsive">
+	  <div class="gallery">
+	    <a target="_blank" href="./image/suburb.png">
+	      <img src="./image/suburb.png" alt="Suburbs" width="600" height="400">
+	    </a>
+	    <div class="desc"><span id="sub"></span></div>
+	  </div>
+	</div>
+
+
+	<div class="responsive">
+	  <div class="gallery">
+	    <a target="_blank" href="./image/lake.jpg">
+	      <img src="./image/lake.jpg" alt="Lake" width="600" height="400">
+	    </a>
+	    <div class="desc"><span id="lak"></span></div>
+	  </div>
+	</div>
+
+	<div class="responsive">
+	  <div class="gallery">
+	    <a target="_blank" href="./image/hills.jpg">
+	      <img src="./image/hills.jpg" alt="Hills" width="600" height="400">
+	    </a>
+	    <div class="desc"><span id="hil"></span></div>
+	  </div>
+	</div>
+	<div class="clearfix"></div>
+	<hr class="thick">
+	<h1 class="map-head"> List of Properties</h1>
+	<h2 class="map-head">Airport</h2>
+	<ul id="airP">
+		<li>
+			Hangar
+		</li>
+		<li>
+			Hotel
+		</li>
+		<li>
+			Cafe
+		</li>
+		<li>
+			Parking Lot
+		</li>
+	</ul>
+	<h2 class="map-head">Harbor</h2>
+	<ul id="harP">
+		<li>
+			Dock
+		</li>
+		<li>
+			Warehouse
+		</li>
+		<li>
+			Boat Yard
+		</li>
+	</ul>
+	<h2 class="map-head">City</h2>
+	<ul id="cityP">
+		<li>
+			Small Apartment
+		</li>
+		<li>
+			Penthouse
+		</li>
+		<li>
+			Garage
+		</li>
+		<li>
+			Arcade
+		</li>
+	</ul>
+	<h2 class="map-head">Beach</h2>
+	<ul id="beachP">
+		<li>
+			Small Beachhouse
+		</li>
+		<li>
+			Large Beachhouse
+		</li>
+		<li>
+			Beach Club
+		</li>
+			<li>
+			Cafeteria
+		</li>
+	</ul>
+	<h2 class="map-head">Sub-Urban</h2>
+	<ul id="subP">
+		<li>
+			Small Home
+		</li>
+		<li>
+			Large Mansion
+		</li>
+		<li>
+			Country Club
+		</li>
+		<li>
+			Supermarket
+		</li>
+	</ul>
+	<h2 class="map-head">Lake</h2>
+	<ul id="lakeP">
+		<li>
+			Pier
+		</li>
+		<li>
+			Log Cabin
+		</li>
+		<li>
+			Fishing Club
+		</li>
+		<li>
+			Fishing Gear Store
+		</li>
+	</ul>
+	<h2 class="map-head">Hills</h2>
+	<ul id="hillP">
+		<li>
+			Luxury Home
+		</li>
+		<li>
+			Trekking Store
+		</li>
+		<li>
+			Bunker
+		</li>
+	</ul>
+	    <footer class="footer bg-clr">
+	        <h1 class="end text-white" id="about"> ABOUT US </h1>  
+	    </footer>
+	    	<script>
+				function idk(parent, print) {
+					var count = document.getElementById(
+					parent).childElementCount;
+
+				document.getElementById(print).innerHTML
+					= "Total Number of Property in Area: "
+					+ count;	
+				}
+				window.onload = idk("airP", "air");
+				window.onload = idk("harP", "har");
+				window.onload = idk("cityP", "cit");
+				window.onload = idk("subP", "sub");
+				window.onload = idk("beachP", "bea");
+				window.onload = idk("lakeP", "lak");
+				window.onload = idk("hillP", "hil");
+				function totalcnt() {
+					var total = document.getElementById(
+					"airP").childElementCount+document.getElementById(
+					"harP").childElementCount+document.getElementById(
+					"cityP").childElementCount+document.getElementById(
+					"subP").childElementCount+document.getElementById(
+					"beachP").childElementCount+document.getElementById(
+					"lakeP").childElementCount+document.getElementById(
+					"hillP").childElementCount;
+					document.getElementById("totalC").innerHTML
+					= "Total Number Available Properties in Whole Map: "
+					+ total;
+				}
+				totalcnt();
+		</script>
+</body>
+</html>
