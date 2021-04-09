@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Montserrat:wght@300;400;500;700&display=swap');
+
+@font-face {
+    font-family: 'Gretaros Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gretaros Regular'), url('../font/Gretaros-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gill sans';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gill sans'), url('../font/Gill\ Sans.otf') format('otf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    background: #ddd;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+}
+
+/* -------------------------- UTILITY CLASSES -------------------------- */
+
+.bg-foot{
+    background-color: #263238;
+}
+
+.text-white{
+    color: #f4f4f4;
+}
+
+.text-black{
+    color: #222222;
+}
+
+/* -------------------------- CONTAINER -------------------------- */
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container2{
+    max-width:1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* -------------------------- HEADER AND FOOTER -------------------------- */
+
+.footer{
+    height: 20vh;
+    padding-top: 3rem;
+}
+
+.end{
+    font-family: 'Gretaros';
+    font-size:4rem;
+    text-align: center;
+    padding-top: 0.5em;
+}
+
+/* -------------------------- NAV BAR -------------------------- */
+
+.navbar1{
+    padding: 0.1rem;
+    background-color: rgba(122, 122, 122, 0.8);
+}
+
+.navbar2{
+    padding: 0.1rem;
+}
+
+.logo{
+    font-family: 'Bangers', cursive;
+    letter-spacing: 0.05rem;
+}
+
+.navbar a{
+    color: white;
+    padding-bottom: 0.3rem;
+}
+
+.navbar .navitem{
+    display: inline-block;
+    padding: 1rem;
+}
+
+.navbar .logo{
+    float: left;
+    font-size: 3.5rem;
+}
+
+.navbar .navitems{
+    float: right;
+    margin-top: 1rem;
+}
+
+.navbar::after{
+    content: " ";
+    display: block; 
+    clear: both;
+}
+
+.navbar a:hover{
+    border-bottom: 1px solid white;
+}
+
+/* -------------------------- VIEW PAGE -------------------------- */
+
+img.map {
+    position: absolute;
+    
+}
+.map
+{
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hide {
+    display: none;
+    z-index: 1;
+}
+
+.myDIV:hover + .hide {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: orange;
+    display: inline-block;
+    height: 400px;
+    padding: 50px;
+}
+.map-head{
+  font-family: "Helvetica Bold Condensed", "Gill sans", "Bebas Neue" , sans-serif;
+  color: #FFFFFF;
+  font-size: 400%;
+}
+.desc-image{
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+.desc-text{
+  font-family: "Helvetica Bold Condensed", "Gill sans", "Bebas Neue" , sans-serif;
+  color: #FFFFFF;
+    font-size: 20px;
+}
+/* -------------------------- REPORT PAGE -------------------------- */
+div.gallery {
+    border: 1px solid #ccc;
+  }
+
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+
+  div.gallery img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .desc {
+    padding: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 150%;
+    font-weight: bold;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  .map-head{
+      font-family: "Helvetica Bold Condensed", "Gill sans", "Bebas Neue" , sans-serif;
+      color: #FFFFFF;
+      font-size: 400%;
+      text-align: center;
+      clear: both;
+      display: block;
+              }
+  hr.thick {
+    border: 15px solid white;
+    border-radius: 15px;
+    clear: both;
+    display: block;
+  }
+  ul{
+      color: #FFFFFF;
+      font-size: 200%;
+      text-align: center;
+  }
+  .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+  }

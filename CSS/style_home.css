@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:wght@300;400;500;700&display=swap');
+
+@font-face {
+    font-family: 'Gretaros Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gretaros Regular'), url('../font/Gretaros-Regular.woff') format('woff');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    background: #ddd;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+}
+
+/* -------------------------- UTILITY CLASSES -------------------------- */
+
+.bg-foot{
+    background-color: #263238;
+}
+
+.text-white{
+    color: #f4f4f4;
+}
+
+.text-black{
+    color: #222222;
+}
+
+/* -------------------------- CONTAINER -------------------------- */
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container2{
+    max-width:1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* -------------------------- HEADER AND FOOTER -------------------------- */
+
+.header1{
+    height: 94vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../image/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer{
+    height: 20vh;
+    padding-top: 3rem;
+}
+
+/* -------------------------- NAV BAR -------------------------- */
+
+.navbar1{
+    padding: 0.1rem;
+    background-color: rgba(122, 122, 122, 0.8);
+}
+
+.navbar2{
+    padding: 0.1rem;
+}
+
+.logo{
+    font-family: 'Bangers', cursive;
+    letter-spacing: 0.05rem;
+}
+
+.navbar a{
+    color: white;
+    padding-bottom: 0.3rem;
+}
+
+.navbar .navitem{
+    display: inline-block;
+    padding: 1rem;
+}
+
+.navbar .logo{
+    float: left;
+    font-size: 3.5rem;
+}
+
+.navbar .navitems{
+    float: right;
+    margin-top: 1rem;
+}
+
+.navbar::after{
+    content: " ";
+    display: block; 
+    clear: both;
+}
+
+.navbar a:hover{
+    border-bottom: 1px solid white;
+}
+
+/* -------------------------- ABOUT US -------------------------- */
+
+.end{
+    font-family: 'Gretaros';
+    font-size:4rem;
+    text-align: center;
+    padding-top: 0.5em;
+}
+
+.abt-team{
+    padding-bottom: 2.5rem;
+    text-align: center;
+}
+
+.abt-dis{
+    padding-bottom: 4rem;
+}
+
+.h-links p, .h-links i{
+    color: #f4f4f4;
+    padding-bottom: 0.9rem;
+}
+
+.h-links{
+    width: 20%;
+    float: left;
+    font-weight: 600;
+    box-shadow: 0px 0px 20px 0px #ababab;
+}
+
+.ashish{
+    height: 20rem;
+    margin-left: 15.5rem;
+    border-radius: 2rem;
+    background: url(../image/ashish.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.raj{
+    height: 20rem;
+    margin-left: 4rem;
+    border-radius: 2rem;
+    background: url(../image/Raj.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tushar{
+    height: 20rem;
+    margin-left: 4rem;
+    border-radius: 2rem;
+    background: url(../image/tushar.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.abt-dis::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+/* -------------------------- ABOUT US ANIMATION -------------------------- */
+
+.overlay{
+    padding-left: 1.8rem;
+    padding-top: 12.7rem;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    border-radius: 2rem;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+.lr-links{
+    text-align: center;
+}
+
+form a, .lr-links a{
+    color: white;
+}
+
+form a:hover{
+    border-bottom: 1px solid white;
+}
+
+.lr-links i{
+    margin: 1rem;
+}
+
+/* -------------------------- SEARCH BOX -------------------------- */
+
+.search{
+    background: rgba(255, 255, 255, 0.699);
+    position: relative;
+    border-radius: 2.5rem;
+}
+
+.search input{
+    color: #222222;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1.5rem 2rem;
+    background: transparent;
+    border: none;
+    font-size: 15px;
+    outline: none;
+}
+
+.search .house{
+    width: 66%;
+}
+
+.search .s-btn{
+    width: 10%;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem 0;
+    background-color: #222222;
+    color: #f4f4f4;
+    margin-bottom: 0.65rem;
+    border: none;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.search input::placeholder{
+    color: #222222;
+}
+
+.search .s-btn:hover{
+    background-color: #474747;
+}
+
+/* -------------------------- HOMEPAGE -------------------------- */
+
+.navbar3{
+    margin-top: 23rem;
+    text-align: center;
+}
+
+.navbar3 a{
+    font-size: 2rem;
+    color: #f4f4f4;
+}
+
+.navbar3 .navitem{
+    display: inline-block;
+    padding: 0 2rem;
+    margin-top: 0.8rem;
+}
+
+.bg-nav{
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto;
+    background: #222222;
+    border-radius: 3rem;
+    margin-bottom: 1rem;
+}
+
+.navbar3::after{
+    content: " ";
+    display: block; 
+    clear: both;
+}
+
+.navbar3 a:hover{
+    border-bottom: 1px solid white;
+}
