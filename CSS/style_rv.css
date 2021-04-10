@@ -27,7 +27,7 @@ html{
 body{
     font-family: 'Montserrat', sans-serif;
     line-height: 1.7;
-    background: #ddd;
+    background: black;
 }
 
 ul li{
@@ -104,7 +104,7 @@ p, li{
 
 .navbar a{
     color: white;
-    padding-bottom: 0.3rem;
+    padding-bottom: 0.1rem;
 }
 
 .navbar .navitem{
@@ -170,11 +170,13 @@ img.map {
     width: 300px;
 }
 .desc-text{
-  font-family: "Helvetica Bold Condensed", "Gill sans", "Bebas Neue" , sans-serif;
-  color: #FFFFFF;
+    font-family: "Helvetica Bold Condensed", "Gill sans", "Bebas Neue" , sans-serif;
+    color: #FFFFFF;
     font-size: 20px;
 }
+
 /* -------------------------- REPORT PAGE -------------------------- */
+
 div.gallery {
     border: 1px solid #ccc;
   }
@@ -225,13 +227,15 @@ div.gallery {
       text-align: center;
       clear: both;
       display: block;
-              }
+}
+
   hr.thick {
     border: 15px solid white;
     border-radius: 15px;
     clear: both;
     display: block;
   }
+
   ul{
       color: #FFFFFF;
       font-size: 200%;
