@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:wght@300;400;500;700&family=Sacramento&family=Handlee&display=swap');
 
 @font-face {
     font-family: 'Gretaros Regular';
@@ -88,9 +88,19 @@ p, li{
     padding: 0.1rem;
 }
 
-.logo{
-    font-family: 'Bangers', cursive;
-    letter-spacing: 0.05rem;
+.h-logo{
+    font-family: Handlee;
+    font-size: 2.5rem;
+    padding-top: 1.2rem;
+    padding-left: 0.5rem;
+    float: left;
+}
+
+.navbar .logo{
+    width: 4.3rem;
+    height: 5.2rem;
+    float: left;
+    padding-top: 1rem;
 }
 
 .navbar a{
@@ -101,11 +111,6 @@ p, li{
 .navbar .navitem{
     display: inline-block;
     padding: 1rem;
-}
-
-.navbar .logo{
-    float: left;
-    font-size: 3.5rem;
 }
 
 .navbar .navitems{

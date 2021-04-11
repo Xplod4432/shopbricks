@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:wght@300;400;500;700&family=Sacramento&family=Handlee&display=swap');
 
 @font-face {
     font-family: 'Gretaros Regular';
@@ -6,7 +6,7 @@
     font-weight: normal;
     src: local('Gretaros Regular'), url('../font/Gretaros-Regular.woff') format('woff');
 }
-
+ 
 *{
     margin: 0;
     padding: 0;
@@ -69,7 +69,7 @@ p, li{
 
 .header1{
     height: 94vh;
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../image/background.jpg');
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('../image/background.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -84,31 +84,37 @@ p, li{
 
 .navbar1{
     padding: 0.1rem;
-    background-color: rgba(122, 122, 122, 0.8);
+    background-color: rgba(255, 255, 255, 0.699);
 }
 
 .navbar2{
     padding: 0.1rem;
 }
 
-.logo{
-    font-family: 'Bangers', cursive;
-    letter-spacing: 0.05rem;
+.h-logo{
+    font-family: Handlee;
+    font-size: 2.5rem;
+    padding-top: 1.2rem;
+    padding-left: 0.5rem;
+    float: left;
+}
+
+.navbar .logo{
+    width: 4.3rem;
+    height: 5.2rem;
+    float: left;
+    padding-top: 1rem;
 }
 
 .navbar a{
-    color: white;
-    padding-bottom: 0.3rem;
+    color: #222222;
+    font-weight: 500;
+    padding-bottom: 0.1rem;
 }
 
 .navbar .navitem{
     display: inline-block;
     padding: 1rem;
-}
-
-.navbar .logo{
-    float: left;
-    font-size: 3.5rem;
 }
 
 .navbar .navitems{
@@ -123,7 +129,7 @@ p, li{
 }
 
 .navbar a:hover{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #222222;
 }
 
 /* -------------------------- ABOUT US -------------------------- */
@@ -223,12 +229,26 @@ form a:hover{
     margin: 1rem;
 }
 
+/* -------------------------- TEXT -------------------------- */
+
+.text{
+    text-align: center;
+    font-weight: 700;
+    margin-top: 4rem;
+}
+
+.text p{
+    font-family: Sacramento;
+    font-size: 8rem;
+}
+
 /* -------------------------- SEARCH BOX -------------------------- */
 
 .search{
     background: rgba(255, 255, 255, 0.699);
     position: relative;
     border-radius: 2.5rem;
+    margin-top: 3rem;
 }
 
 .search input{
@@ -270,13 +290,14 @@ form a:hover{
 /* -------------------------- HOMEPAGE -------------------------- */
 
 .navbar3{
-    margin-top: 23rem;
     text-align: center;
+    margin-top: 17rem;
 }
 
 .navbar3 a{
     font-size: 2rem;
     color: #f4f4f4;
+    font-weight: 600;
 }
 
 .navbar3 .navitem{
@@ -289,7 +310,6 @@ form a:hover{
     max-width: 500px;
     width: 90%;
     margin: 0 auto;
-    background: #222222;
     border-radius: 3rem;
     margin-bottom: 1rem;
 }
@@ -301,5 +321,5 @@ form a:hover{
 }
 
 .navbar3 a:hover{
-    border-bottom: 1px solid white;
+    border-bottom: 1.5px solid white;
 }

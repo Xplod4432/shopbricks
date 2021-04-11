@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Montserrat:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:wght@300;400;500;700&family=Sacramento&family=Handlee&display=swap');
 
 @font-face {
     font-family: 'Gretaros Regular';
@@ -77,6 +77,13 @@ p, li{
 .footer{
     height: 20vh;
     padding-top: 3rem;
+    margin-top: 4rem;
+}
+
+.footer2{
+    height: 20vh;
+    padding-top: 3rem;
+    margin-top: 100rem;
 }
 
 .end{
@@ -84,6 +91,22 @@ p, li{
     font-size:4rem;
     text-align: center;
     padding-top: 0.5em;
+}
+
+.lr-links{
+    text-align: center;
+}
+
+form a, .lr-links a{
+    color: white;
+}
+
+form a:hover{
+    border-bottom: 1px solid white;
+}
+
+.lr-links i{
+    margin: 1rem;
 }
 
 /* -------------------------- NAV BAR -------------------------- */
@@ -97,9 +120,19 @@ p, li{
     padding: 0.1rem;
 }
 
-.logo{
-    font-family: 'Bangers', cursive;
-    letter-spacing: 0.05rem;
+.h-logo{
+    font-family: Handlee;
+    font-size: 2.5rem;
+    padding-top: 1.2rem;
+    padding-left: 0.5rem;
+    float: left;
+}
+
+.navbar .logo{
+    width: 4.3rem;
+    height: 5.2rem;
+    float: left;
+    padding-top: 1rem;
 }
 
 .navbar a{
@@ -110,11 +143,6 @@ p, li{
 .navbar .navitem{
     display: inline-block;
     padding: 1rem;
-}
-
-.navbar .logo{
-    float: left;
-    font-size: 3.5rem;
 }
 
 .navbar .navitems{
@@ -179,70 +207,72 @@ img.map {
 
 div.gallery {
     border: 1px solid #ccc;
-  }
+}
 
-  div.gallery:hover {
+div.gallery:hover {
     border: 1px solid #777;
-  }
+}
 
-  div.gallery img {
+div.gallery img {
     width: 100%;
     height: 200px;
-  }
+}
 
-  .desc {
+.desc {
     padding: 15px;
     text-align: center;
     color: #FFFFFF;
     font-size: 150%;
     font-weight: bold;
-  }
+}
 
-  * {
+*{
     box-sizing: border-box;
-  }
+}
 
-  .responsive {
+.responsive {
     padding: 0 6px;
     float: left;
     width: 24.99999%;
-  }
-
-  @media only screen and (max-width: 700px) {
-    .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
-    }
-  }
-
-  @media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
-    }
-  }
-  .map-head{
-      font-family: "Helvetica Bold Condensed", "Gill sans", "Bebas Neue" , sans-serif;
-      color: #FFFFFF;
-      font-size: 400%;
-      text-align: center;
-      clear: both;
-      display: block;
 }
 
-  hr.thick {
+@media only screen and (max-width: 700px) {
+    .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+    width: 100%;
+    }
+}
+
+.map-head{
+    font-family: "Helvetica Bold Condensed", "Gill sans", "Bebas Neue" , sans-serif;
+    color: #FFFFFF;
+    font-size: 400%;
+    text-align: center;
+    clear: both;
+    display: block;
+}
+
+hr.thick {
     border: 15px solid white;
     border-radius: 15px;
     clear: both;
     display: block;
-  }
+}
 
-  ul{
-      color: #FFFFFF;
-      font-size: 200%;
-      text-align: center;
-  }
-  .clearfix:after {
-        content: "";
-        display: table;
-        clear: both;
-  }
+ul{
+    color: #FFFFFF;
+    font-size: 200%;
+    text-align: center;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
