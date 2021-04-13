@@ -367,3 +367,161 @@ form a:hover{
 .navbar3 a:hover{
     border-bottom: 1.5px solid white;
 }
+
+/* -------------------------- RESPONSIVE -------------------------- */
+
+@media (max-width: 500px){
+    html{
+        font-size: 45%;
+    }
+
+    .header1{
+        height: auto;
+        padding-bottom: 5rem;
+    }
+
+    .h-logo{
+        display: none;
+    }
+
+    .navbar3{
+        margin-top: 10rem;
+    }
+
+    .navbar3 .navitem{
+        display: inline-block;
+        padding: 0 1.5rem;
+        margin-top: 0.8rem;
+    }
+
+    .search input{
+        padding: 1.5rem 0;
+        padding-left: 2rem;
+        padding-right: 1rem;
+    }
+
+    .search .house{
+        width: 100%;
+    }
+
+    .search .location{
+        width: 60%;
+    }
+
+    .search .s-btn{
+        width: 38%;
+        padding: 1.2rem 0;
+    }
+
+    .text p{
+        font-size: 5rem;
+    }
+
+    .g-img{
+        width: 100%;
+        height:50rem;
+        float: none;
+        border-radius: 1rem;
+        border: 2px solid green;
+    }
+
+    .g-img-2, .g-img-3, .g-img-4{
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    
+    .g-img-wrap{
+        height: auto;
+    }
+
+    .h-links{
+        width: 100%;
+        float: none;
+    }
+
+    .ashish, .tushar, .raj{
+        height: 45rem;
+        margin-left: 0rem;
+        margin-bottom: 3rem;
+    }
+
+    .overlay{
+        padding-left: 1.8rem;
+        padding-top: 34.9rem;
+        font-size: large;
+    }
+
+    .h-links i{
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 700px){
+    html{
+        font-size: 45%;
+    }
+
+    .header1{
+        height: auto;
+        padding-bottom: 5rem;
+    }
+
+    .h-logo{
+        display: none;
+    }
+
+    .navbar3{
+        margin-top: 10rem;
+    }
+
+    .navbar3 .navitem{
+        display: inline-block;
+        padding: 0 1.5rem;
+        margin-top: 0.8rem;
+    }
+
+    .search input{
+        padding: 1.5rem 0;
+        padding-left: 2rem;
+        padding-right: 1rem;
+    }
+
+    .search .house{
+        width: 100%;
+    }
+
+    .search .location{
+        width: 70%;
+    }
+
+    .search .s-btn{
+        width: 28%;
+        padding: 1.2rem 0;
+    }
+
+    .text p{
+        font-size: 5rem;
+    }
+
+    .s-gallery h1, .s-gallery p{
+        margin-left: 1.3rem;
+    }
+
+    .g-img{
+        width: 45%;
+    }
+
+    .g-img-1{
+        margin-left: 1.3rem;
+    }
+
+    .g-img-3, .g-img-4{
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    .ashish, .tushar, .raj{
+        width: 30%;
+        margin-left: 1.8rem;
+    }
+}
