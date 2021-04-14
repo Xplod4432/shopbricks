@@ -26,6 +26,31 @@
         </nav>
 		<section class="container">
 			<h1 class="map-head"><span id="totalC"></span></h1>
+			<br>
+				<br>
+				<section class="container">
+					<h1 class="map-head">
+						Number of Visitors :
+						<div id="CounterVisitor">
+						<span class="counter-item">0</span>
+						<span class="counter-item">0</span>
+						<span class="counter-item">1</span>
+						<span class="counter-item">1</span>
+						<span class="counter-item">8</span>
+						<span class="counter-item">4</span>
+			  </div></h1>
+					<script>    var n = localStorage.getItem('on_load_counter');
+
+						if (n === null) {
+							n = 0;
+						}
+					
+						n++;
+					
+						localStorage.setItem("on_load_counter", n);
+					
+						document.getElementById('CounterVisitor').innerHTML = n;
+						</script>
 			<div class="responsive">
 			  <div class="gallery">
 				<a target="_blank" href="./image/airport.jpg">
@@ -34,7 +59,6 @@
 				<div class="desc"><span id="air"></span></div>
 			  </div>
 			</div>
-		
 		
 			<div class="responsive">
 			  <div class="gallery">
