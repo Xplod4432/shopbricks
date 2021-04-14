@@ -213,3 +213,49 @@ form a:hover{
 .lr-links i{
     margin: 1rem;
 }
+
+/* -------------------------- RESPONSIVE -------------------------- */
+
+@media (max-width: 500px){
+    html{
+        font-size: 45%;
+    }
+
+    .h-logo{
+        display: none;
+    }
+
+    .form-wrap-1{
+        height: 42rem;
+        margin-top: 14rem;
+        margin-bottom: 13rem;
+    }
+
+    .form-wrap-2{
+        height: 46rem;
+        margin-top: 12rem;
+        margin-bottom: 11rem;
+    }
+}
+
+@media (max-width: 700px){
+    html{
+        font-size: 45%;
+    }
+
+    .h-logo{
+        display: none;
+    }
+
+    .form-wrap-1{
+        height: 42rem;
+        margin-top: 19rem;
+        margin-bottom: 17rem;
+    }
+
+    .form-wrap-2{
+        height: 46rem;
+        margin-top: 18rem;
+        margin-bottom: 15rem;
+    }
+}
