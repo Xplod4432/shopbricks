@@ -14,6 +14,15 @@
     src: local('Gill sans'), url('../font/Gill\ Sans.otf') format('otf');
 }
 
+@font-face {
+    font-family: 'helvetica_bold_condensedplain';
+    src: url('../font/helveticaboldcondensedplain-webfont.woff2') format('woff2'),
+         url('../font/helveticaboldcondensedplain-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -187,7 +196,7 @@ img.map {
     padding: 50px;
 }
 .map-head{
-  font-family: "Helvetica Bold Condensed", "Gill sans", "Bebas Neue" , sans-serif;
+  font-family: "HelveticaNeue-CondensedBold", "helvetica_bold_condensedplain", "Bebas Neue" , sans-serif;
   color: #FFFFFF;
   font-size: 400%;
 }
@@ -198,7 +207,7 @@ img.map {
     width: 300px;
 }
 .desc-text{
-    font-family: "Helvetica Bold Condensed", "Gill sans", "Bebas Neue" , sans-serif;
+    font-family: "HelveticaNeue-CondensedBold", "helvetica_bold_condensedplain", "Bebas Neue" , sans-serif;
     color: #FFFFFF;
     font-size: 20px;
 }
