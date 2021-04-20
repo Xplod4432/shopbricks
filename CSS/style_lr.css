@@ -238,9 +238,9 @@ form a:hover{
     }
 }
 
-@media (max-width: 700px){
+@media (min-width:501px) and (max-width: 700px){
     html{
-        font-size: 45%;
+        font-size: 8px;
     }
 
     .h-logo{
