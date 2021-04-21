@@ -161,7 +161,7 @@ p, li{
     height:100%;
     float: left;
     border-radius: 1rem;
-    border: 2px solid green;
+    border: 1px solid #ababab;
 }
 
 .g-img-2, .g-img-3, .g-img-4{
@@ -423,7 +423,7 @@ form a:hover{
         float: none;
         border-radius: 1rem;
         margin-left: 0;
-        border: 2px solid green;
+        border: 1px solid #ababab;
     }
 
     .g-img-2, .g-img-3, .g-img-4{
