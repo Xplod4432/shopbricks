@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<style>
+
+
+
+
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+
+
+
+
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("img_nature.jpg");
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+
+</style>
+
+
+
+<title>SimplyRETS Map Search</title>
+
+        <link
+            rel="stylesheet"
+            href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.2.3/leaflet.draw.css"
+        />
+        <!--[if lte IE 8
+            ]><link
+                rel="stylesheet"
+                href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.ie.css"
+        /><![endif]-->
+
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.2.3/leaflet.draw.js"></script>
+
+        <script language="javascript">
+            $(document).ready(function () {
+                var map = new L.Map("map")
+
+                L.tileLayer(
+                    "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                    {
+                        attribution:
+                            '&copy; %lt;a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
+                    }
+                ).addTo(map)
+
+                var houston = new L.LatLng(29.97, -95.35)
+                map.setView(houston, 10)
+
+                var drawnItems = new L.FeatureGroup()
+                map.addLayer(drawnItems)
+
+                var drawControl = new L.Control.Draw({
+                    edit: {
+                        featureGroup: drawnItems,
+                    },
+                })
+
+                map.addControl(drawControl)
+                map.on("draw:created", function (e) {
+                    var latLngs = $.map(e.layer.getLatLngs(), function (o) {
+                        return { name: "points", value: o.lat + "," + o.lng }
+                    })
+
+                    $.ajax({
+                        url: "https://api.simplyrets.com/properties",
+                        data: latLngs,
+                        beforeSend: function (xhr) {
+                            xhr.setRequestHeader(
+                                "Authorization",
+                                "Basic " + btoa("simplyrets:simplyrets")
+                            )
+                        },
+                        success: function (data) {
+                            $.each(data, function (idx) {
+                                var markerLocation = new L.LatLng(
+                                    data[idx].geo.lat,
+                                    data[idx].geo.lng
+                                )
+                                var marker = new L.Marker(markerLocation)
+                                map.addLayer(marker)
+                            })
+                        },
+                    })
+
+                    map.addLayer(e.layer)
+                })
+            })
+        </script>
+
+
+
+
+
+
+
+
+</head>
+<body>
+    
+ 
+<div class="header">
+      <img class="logo" src="./image/{{android-chrome-192x192.png}}" alt="Shop Bricks official logo" width="100" height="100">
+  <h2>ShopBricks</h2>
+  <p>Upload Page</p>
+</div>
+
+<div id="navbar">
+
+               
+                   <a href="./index.html"> HOME </a>
+                   <a href="#about"> ABOUT US </a>
+                    <a href="report.html"> REPORT </a>
+                  <a href="./login.html" > LOGIN </a>
+                  <a href="test 8.html">PROPERTY GALLERY</a>
+               
+         
+</div>
+  
+    
+
+
+    
+
+<h2>Find the place you love ...!!!</h2>
+<h3>Drag the map away to see the upload form</h3>
+<div id="map" style="height: 100%">
+  <form action="/action_page.php" class="container">
+    <h1>Upload your Cridentials</h1>
+
+<p>
+    <label for="upload photograph"><b>Photograph</b></label>
+     <input type="file" id="myFile" name="filename">
+  <input type="submit">
+</p>  
+ <p>
+   <label for="signature"><b>Signature</b></label>
+      <input type="file" id="myFile" name="filename">
+  <input type="submit">
+  </p>   
+    <p>
+    <label for="identity"><b>Authorized identity card</b></label>
+     <input type="file" id="myFile" name="filename">
+  <input type="submit">
+  
+  </p>
+    
+  
+
+    <button type="submit" class="btn">Finish</button>
+  </form>
+</div>
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+
+
+</body>
+</html>
